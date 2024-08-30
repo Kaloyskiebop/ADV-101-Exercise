@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#navigation h1 {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 0px 20px;
+    color:white;
+    
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.904);
+    z-index: 1000;
+}
+
+#navigation.sticky {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.900);
+  }
+
+li, a {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: rgb(61, 143, 115);
+}
+
+.cta button {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(64, 139, 114) ;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 18px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta button:hover {
+    background-color: rgb(44, 100, 81) ;
+}
+
+
+#home {
+    background-color: rgb(4, 2, 20);
+    display: flex;
+    justify-content: space-between;    
+    padding-top: 200px;    
+}
+
+#home h2 {
+    font-family: "Saira Condensed", sans-serif;
+    color: white;
+    font-size: 70px;
+    padding-top: 90px;
+    padding-right: 8em
+}
+
+.btn button {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(64, 139, 114, 0) ;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: rgb(64, 139, 114);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#home, #about {
+    height: 100vh;
+}
+
+span {
+    color: rgb(105, 207, 173)
+}
+
+#home img {
+    width: 750px;
+    padding-left: 250px;
+}
+p {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 27px;
+    color: white;
+    max-width: 600px;
+}
+
+#about {
+    height: 120vh;
+    background-color: rgb(7, 3, 44);
+    display:flex;
+    justify-content: center;
+}
+
+#about h2{
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 50px;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+#about {
+    padding: 40px;
+}
+
+#box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box {
+    padding: 40px;
+    border: 2px solid rgb(64, 139, 114);
+    border-radius: 20px 20px 0 0;
+    width: 25%;
+    text-align: center;
+}
+
+.box h1 {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.box p {
+    font-size: 25px;
+}
+
+.box img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+#contact {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .container {
+    border: 2px solid gray;
+    border-radius: 20px;
+    position: relative;
+    width: 480px;
+    background-color: rgb(0, 0, 0);
+}
+
+#contact .heading {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px;
+}
+
+#contact .entry {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    margin: 12px;
+}
+
+.entry input,
+.entry textarea {
+    font-family: "Saira Condensed", sans-serif;
+    color: white;
+    outline: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 5em;
+    background: transparent;
+    transition: 0.1s ease;
+}
+
+.entry .uil {
+    position: absolute;
+    right: 30px;
+    font-size: 1.8em;
+    z-index: 11;
+    color: rgb(255, 255, 255);
+}
+
+.entry textarea {
+    font-family: "Saira Condensed", sans-serif;
+    line-height: 20px;
+    height: 100px;
+    padding: 20px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.entry .labelline {
+    font-family: "Saira Condensed", sans-serif;
+    position: absolute;
+    font-size: 1.2em;
+    color: rgb(119, 119, 119);
+    padding: 0 5px;
+    margin: 0 20px;
+    background: rgb(0, 0, 0);
+    transition: 0.2s ease;
+}
+
+#contact .btn {
+    font-family: "Saira Condensed", sans-serif;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 1.6em;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.entry h1 {
+    font-family: "Saira Condensed", sans-serif;
+    color:white;
+
+}
+  
+  
